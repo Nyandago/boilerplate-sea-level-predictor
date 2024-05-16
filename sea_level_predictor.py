@@ -18,6 +18,9 @@ def draw_plot():
 
 
     # Create second line of best fit
+    lr_2000_2012 = linregress(df.query('Year >= 2000')['Year'], 
+                              df.query('Year >= 2000')['CSIRO Adjusted Sea Level'])
+    plt.plot(range(2000, 2051, 1), lr_2000_2012.slope * range(2000, 2051, 1) + lr_2000_2012.intercept)
 
 
     # Add labels and title
