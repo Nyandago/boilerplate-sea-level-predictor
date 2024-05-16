@@ -24,6 +24,9 @@ def draw_plot():
 
 
     # Add labels and title
+    plt.title('Rise in Sea Level')
+    plt.ylabel('Sea Level (inches)')
+    plt.xlabel('Year')
 
     
     # Save plot and return data for testing (DO NOT MODIFY)
